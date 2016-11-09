@@ -1,0 +1,8 @@
+version: 0.0
+os: linux
+files:
+  - source: /target/HelloWorld.war
+    destination: /opt/tomcat/apache-tomcat-8.0.38/webapps/
+hooks:
+  BeforeInstall:
+    - location: /before-install-scripts/test.sh
