@@ -22,7 +22,7 @@ public class HelloWorld extends HttpServlet
     {
         String color = request.getParameter("color");
         PrintWriter out = response.getWriter();
-        out.println((new StringBuilder("<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n<html> \n<head> \n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\"> \n<title> My first jsp </title> \n</head> \n<body> \n<font size=\"12px\" color=\"")).append(color).append("\">").append("Hello World").append("</font> \n").append("</body> \n").append("</html>").toString());
+        out.println((new StringBuilder("<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n<html> \n<head> \n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=ISO-8859-1\"> \n<title> My first jsp </title> \n</head> \n<body> \n<font size=\"12px\" color=\"")).append(color).append("\">").append("Hello World 2").append("</font> \n").append("</body> \n").append("</html>").toString());
     }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
